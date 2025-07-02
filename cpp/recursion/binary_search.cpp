@@ -8,8 +8,14 @@ int binarysearch(int arr[],int start, int end, int key)
 
     if(key==arr[mid]) return true;
 
-    if(key>arr[mid]) return (arr,mid+1,end,key);
-    else return(arr,start,mid-1,key);
+    if(key>arr[mid]) 
+    {
+      return (arr,mid+1,end,key);
+    }
+    else
+    {
+      return(arr,start,mid-1,key);
+    } 
 }
 int main()
 {

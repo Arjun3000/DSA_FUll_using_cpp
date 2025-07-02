@@ -10,6 +10,7 @@ int firstsearch(int arr[],int n,int key)
        if(key==arr[mid])
        { 
           store = mid;
+          e = mid - 1;
        }
        if(key>arr[mid])
        {

@@ -20,8 +20,10 @@ int binarysearch(int arr[],int n,int key)
         {
             e = mid - 1;
         }
+        mid = (s+e)/2;
     }
-}
+    return -1;
+}//time complexity is log n
 int main()
 {
      int i,n=5;

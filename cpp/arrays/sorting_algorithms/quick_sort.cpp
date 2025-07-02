@@ -53,5 +53,5 @@ int main()
     }
     cout<<endl;
 
-    cout<<quick(arr,0,n-1);
+    quick(arr,0,n-1);
 }

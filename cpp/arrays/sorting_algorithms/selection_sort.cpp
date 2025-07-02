@@ -16,7 +16,7 @@ int selsort(int arr[],int n)
       }
     swap(arr[min],arr[i]);
    }
-
+cout<<"sorted array is : ";
     for(i=0;i<n;i++)
     {
         cout<<arr[i]<<" ";
