@@ -53,19 +53,7 @@ void insertAtBegin(node*head,int val)
     head = n;
 
 }
-void print(node* head)
-{
-    if (head == NULL)
-        return;
-    node* temp = head;
-    do
-    {
-       cout << temp->data << " -> ";
-       temp = temp->next;
-    } 
-    while (temp != head);
-    cout <<head->data<<"(head)\n";
-}
+
 void insertATPOS(node*&head,int val,int pos)
 {
     node*n = new node(val);
@@ -79,6 +67,42 @@ void insertATPOS(node*&head,int val,int pos)
     n->next = temp->next;
     temp->next = n;
 }
+/*void delATStart(node*&head){
+if(head==NULL)
+{
+    return;
+}
+if(head->next == head)
+{
+    delete head;
+    head = NULL;
+    return;
+}
+node*temp = head;
+while (temp->next!=head)
+{
+    temp = temp->next;
+}
+node*n = head;
+temp->next = head->next;
+head = head->next;
+delete head;
+}*/
+void print(node* head)
+{
+    if (head == NULL)
+        return;
+    node* temp = head;
+    do
+    {
+       cout << temp->data << " -> ";
+       temp = temp->next;
+    } 
+    while (temp != head);
+    cout <<head->data<<"(head)\n";
+}
+
+
 int main()
 {
    node*head = NULL;
@@ -88,5 +112,6 @@ int main()
    insertAtEnd(head,50);
    insertAtBegin(head,10);
    insertATPOS(head,25,2);
+   //delATStart(head);
    print(head);
 }
