@@ -67,7 +67,7 @@ void insertATPOS(node*&head,int val,int pos)
     n->next = temp->next;
     temp->next = n;
 }
-/*void delATStart(node*&head){
+void delATStart(node*&head){
 if(head==NULL)
 {
     return;
@@ -87,7 +87,7 @@ node*n = head;
 temp->next = head->next;
 head = head->next;
 delete head;
-}*/
+}
 void print(node* head)
 {
     if (head == NULL)
@@ -112,6 +112,6 @@ int main()
    insertAtEnd(head,50);
    insertAtBegin(head,10);
    insertATPOS(head,25,2);
-   //delATStart(head);
+   delATStart(head);
    print(head);
 }
