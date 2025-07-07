@@ -7,7 +7,8 @@ int main()
     queue<int>q;
     q.push(10);
     q.push(90);
-    cout<<q.empty()<<endl;
+    q.pop();
+    
     cout<<q.size();
 
 }
