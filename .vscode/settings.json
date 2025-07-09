@@ -15,5 +15,9 @@
             "password": "@Rjun@123",
             "database": "information_schema"
         }
-    ]
+    ],
+    "files.associations": {
+        "*.cpp": "cpp",
+        "iostream": "cpp"
+    }
 }
