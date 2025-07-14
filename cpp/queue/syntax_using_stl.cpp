@@ -9,6 +9,6 @@ int main()
     q.push(90);
     q.pop();
     
-    cout<<q.size();
+
 
 }

@@ -1,10 +1,12 @@
-******array problems*****
+******problem*****
 (1,0,0,1,1,1,0) count number of zeroes
 (4,7,8,3,1,10,17), k = 9 count the number of elements greater than k
 check if array is palindrome
-arr[] = {1,3,3,3,3,5,7,8,8}
+arr = {1,3,3,3,3,5,7,8,8}
 find the first and last occurrence of 3
 find the total occurence of 3
 find binary search in recursive method
 fruit basket 904
 deletion at end at start and from any position in circular linked list.
+reverse of a stack geeks for geeks
+postfix notataion to find

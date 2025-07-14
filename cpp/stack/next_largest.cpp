@@ -20,7 +20,7 @@ vector<int> nextgreat(vector<int> &arr)
             
         }
         st.push(arr[i]);
-    }
+    } 
     return result;
 }
 int main()

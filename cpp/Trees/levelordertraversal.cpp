@@ -30,23 +30,23 @@ void levelorder(treenode* root){
     {
         treenode* temp = q.front();
         q.pop();
-        if(temp!=NULL)
-        {
-        cout<<temp->data<<" ";
+            if(temp!=NULL)
+            {
+            cout<<temp->data<<" ";
 
-        if(temp->left)
-        {
-            q.push(temp->left);
-        }
-        if(temp->right)
-        {
-            q.push(temp->right);
-        }
-    }
-    else if(!q.empty())
-    {
-        q.push(NULL);
-    }
+                if(temp->left)
+                {
+                    q.push(temp->left);
+                }
+                if(temp->right)
+                {
+                    q.push(temp->right);
+                }
+            }
+            else if(!q.empty())
+            {
+                q.push(NULL);
+            }
     }
 
 }
