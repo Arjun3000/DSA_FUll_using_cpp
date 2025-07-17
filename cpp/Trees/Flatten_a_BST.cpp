@@ -35,7 +35,7 @@ void inorder(TreeNode<T>* root, std::vector<T>& add) {
     inorder(root->right, add);
 }
 
-TreeNode<int>* flatten(TreeNode<int>* root)
+TreeNode<int>* flatten(TreeNode<int>* root) {
     std::vector<int> inorderval;
     inorder(root, inorderval);
 
@@ -55,6 +55,4 @@ TreeNode<int>* flatten(TreeNode<int>* root)
     curr->left = NULL;
     curr->right = NULL;
     return newRoot;
-}
-
 }
