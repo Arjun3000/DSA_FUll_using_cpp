@@ -18,6 +18,7 @@
     ],
     "files.associations": {
         "*.cpp": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "insertion": "cpp"
     }
 }
